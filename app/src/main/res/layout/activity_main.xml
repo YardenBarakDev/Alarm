@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TimePicker
+       android:id="@+id/Main_TimePicker"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:theme="@style/Theme.Alarm"
+       />
+
+
+    <TextView
+        android:id="@+id/Main_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_below="@id/Main_TimePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/LinearLayout"
+        />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Main_MaterialButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/set_alarm"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
